@@ -9,9 +9,17 @@
             margin: 5px;
             box-shadow: 1px 1px black;
         }
+        #corpo
+        {
+            padding-top: 90px;
+        }
 
         #Menu {
             background-color: tomato;
+            position: fixed;
+            width: 100%;
+            margin-left: -15px;
+            margin-top: -10px;
         }
 
         li {
@@ -27,7 +35,7 @@
         }
 
         ul {
-            padding: 20px;
+            padding: 10px;
             /*text-align: right;*/
         }
 
@@ -58,10 +66,32 @@
         .imagem
         {
             border: solid 1px black;
-            width: 300px;
+            width: 49%;
             height: 300px;
             background-image: linear-gradient(orange, purple);
             margin-top: 20px;
+        }
+        .caixa
+        {
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 20px;
+            height: 30px;
+            font-size: 16pt;
+            text-align: center;
+            font-family: cursive;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        form
+        {
+            padding-top: 30px;
+        }
+        .entrar
+        {
+            background-color: forestgreen;
+            color: white;
+            height: 40px;
         }
     </style>
 </head>
@@ -71,16 +101,21 @@
         <div id="Menu">
             <nav>
                 <ul>
-                    <li><a class="Nav"> Home</a></li>
-                    <li><a class="Nav"> Parte 1</a></li>
-                    <li><a class="Nav"> Parte 2</a></li>
-                    <li><a class="Nav"> Parte 3</a></li>
+                    <li><a class="Nav"> <img src="https://img.icons8.com/cute-clipart/50/000000/home.png"></a></li>
+                    <li><a class="Nav"><img src="https://img.icons8.com/bubbles/60/000000/couple-icloud.png"></a></li>
+                    <li><a class="Nav"> <img src="https://img.icons8.com/cute-clipart/50/000000/youtube.png"></a></li>
+                    <li><a class="Nav"> <img src="https://img.icons8.com/cute-clipart/50/000000/picture.png"></a></li>
                 </ul>
             </nav>
         </div>
         <div id="corpo">
             <div class="imagem esquerda">
-
+            <form>
+                <input class="caixa" type="text" placeholder="User">
+                <input class="caixa" type="password" placeholder="senha">
+                <br>
+                <input class="caixa entrar" type="button" value="Entrar">
+            </form>
             </div>
             <div class="texto direita">
                 <h1>Titulo 1</h1>
